@@ -1,0 +1,8 @@
+services:
+  nr-db:
+    image: notown-records/postgres
+    build: 
+      context: .
+      dockerfile: ./dockerfiles/postgres.Dockerfile
+    environment:
+      POSTGRES_PASSWORD: secret
